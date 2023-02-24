@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculator</title>
+	<!-- Linking JavaScript file -->
+  <script src="script.js" defer></script>
+</head>
+<body>
+	<!-- Heading -->
+	<h1>Calculator</h1>
+
+	<!-- Disclaimer -->
+	<p>*upto 3 decimal points only</p>
+	
+	<!-- Calculator form -->
+	<form action="#" id="calculator">
+		<!-- First operand -->
+		<label for="operand1">Enter first number:</label><br>
+		<input type="number" step="0.001" id="operand1" name="operand1" placeholder="operand1" /><br><br>
+		
+		<!-- Second operand -->
+		<label for="operand2">Enter second number:</label><br>
+		<input type="number" step="0.0001" id="operand2" name="operand2" placeholder="operand2" /><br><br>
+
+		<!-- Dropdown for operator selection -->
+		<label for="operator">Select an operator:</label><br>
+		<select id="operator" name="operator">
+			<option value="+">Addition</option>
+			<option value="-">Subtraction</option>
+			<option value="*">Multiplication</option>
+			<option value="/">Division</option>
+			<option value="%">Modulo</option>
+		</select>
+		<br/><br/>
+		<!-- Submit button -->
+		<input type="submit" value="Answer" />
+	</form>
+  <br/><br/>
+	<!-- Span for answer -->
+	<b><span id="answer"></span></b>
+</body>
+</html>
